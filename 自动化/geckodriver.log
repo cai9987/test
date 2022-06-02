@@ -1,0 +1,29 @@
+1642580285291	geckodriver	INFO	Listening on 127.0.0.1:62289
+1642580288475	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62290" "-no-remote" "-profile" "C:\\Users\\lv\\AppData\\Local\\Temp\\rust_mozprofile6Qxn8d"
+1642580289892	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lv\\AppData\\Local\\Temp\\rust_mozprofile6Qxn8d\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62290/devtools/browser/d054f9d7-8db6-4238-b741-0d905c92266d
+1642580295249	Marionette	INFO	Listening on port 62296
+1642580295597	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 401
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 403
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 401
+1642589589687	Marionette	INFO	Stopped listening on port 62296
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 14800, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+314617	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lv\\AppData\\Local\\Temp\\rust_mozprofileKfQCXS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62367/devtools/browser/d230bea2-3411-49dc-ad7a-5923915ea52a
+1642580318490	Marionette	INFO	Listening on port 62374
+1642580318811	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 401
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 401
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 403
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 401
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 401
+1642580331866	Marionette	INFO	Stopped listening on port 62374
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+

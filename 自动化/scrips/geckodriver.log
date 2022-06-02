@@ -1,0 +1,18 @@
+1642580490460	geckodriver	INFO	Listening on 127.0.0.1:54753
+1642580493548	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54754" "-no-remote" "-profile" "C:\\Users\\lv\\AppData\\Local\\Temp\\rust_mozprofilefpmjNB"
+1642580494252	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lv\\AppData\\Local\\Temp\\rust_mozprofilefpmjNB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54754/devtools/browser/6f14b83f-09d7-48b7-902a-a9d88db9f883
+1642580498649	Marionette	INFO	Listening on port 54759
+1642580499130	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 401
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 403
+JavaScript error: http://test.zaitakugeek.cn:8080/static/js/0.0e075ae31f4625a0e222.js, line 1: Error: Request failed with status code 401
+1642580505539	Marionette	INFO	Stopped listening on port 54759
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1059: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\lv\AppData\Local\Temp\rust_mozprofilefpmjNB\protections.sqlite
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
