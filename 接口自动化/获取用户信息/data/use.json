@@ -1,0 +1,24 @@
+{
+    "user_001":{
+        "headers":{
+            "Content-Type":"application/json",
+            "Authorization":"Token be96d05e220d981e2a5ac0291a4287919b991258"
+        },
+        "params":{
+            "uid":"111579943374652448"
+        },
+        "url":"http://test.zaitakugeek.cn:8000/user/profile",
+        "status_code":401
+    },
+    "user_002":{
+        "headers":{
+            "Content-Type":"application/json",
+            "Authorization":"Token 0f3f4f9e398819eb92f6dae3abe7958c50670338"
+        },
+        "params":{
+            "uid":"111579943374652448"
+        },
+        "url":"http://test.zaitakugeek.cn:8000/user/profile",
+        "status_code":401
+    }
+}

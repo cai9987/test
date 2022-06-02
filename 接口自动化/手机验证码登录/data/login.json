@@ -1,0 +1,7 @@
+{
+        "url" : "http://test.zaitakugeek.cn:8000/user/email_login",
+        "account" : "15018248542@163.com",
+        "password" : "123456",
+        "status_code" : 200
+        }
+

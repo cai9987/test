@@ -1,0 +1,23 @@
+{
+    "demand_id001":{"url":"http://test.zaitakugeek.cn:8000/hire/info",
+    "headers":{"Content-Type": "application/json",
+                   "Authorization": "Token 899ba76fa15a9108b8bd2a3418d232846b263937"
+               },
+    "status_code":200,
+    "params":{"demand_id": "111667862747350048"}},
+
+
+    "demand_id002":{"url":"http://test.zaitakugeek.cn:8000/hire/info",
+    "headers":{"Content-Type": "application/json",
+                   "Authorization": "Token 82f8ca6b6bb4ad1483bbab9e184bfa17f0a5a0c6"
+               },
+    "status_code":200,
+    "params":{"demand_id": "111667862747350048"}},
+
+    "demand_id003":{"url":"http://test.zaitakugeek.cn:8000/hire/info",
+    "headers":{"Content-Type": "application/json",
+                   "Authorization": "Token 1c0edb0cf33e815a48e7f07a3461987cd0cffcb3"
+               },
+    "status_code":401,
+    "params":{"demand_id": "111667862747350048"}}
+}

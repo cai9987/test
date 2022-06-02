@@ -1,0 +1,24 @@
+{
+    "work_001":{
+        "url":"http://test.zaitakugeek.cn:8000/tender/info",
+        "headers":{
+            "Content-Type":"application/json",
+            "Authorization":"Token 899ba76fa15a9108b8bd2a3418d232846b263937"
+        },
+        "status_code":200,
+        "params":{
+                "tender_id": "111645522533090336"
+        }
+    },
+    "work_002":{
+        "url":"http://test.zaitakugeek.cn:8000/tender/info",
+        "headers":{
+            "Content-Type":"application/json",
+            "Authorization":"Token 82f8ca6b6bb4ad1483bbab9e184bfa17f0a5a0c6"
+        },
+        "status_code":200,
+        "params":{
+                "tender_id": "111645522533090336"
+        }
+    }
+}

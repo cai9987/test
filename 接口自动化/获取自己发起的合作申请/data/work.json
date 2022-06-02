@@ -1,0 +1,18 @@
+{
+    "work_001":{
+        "url":"http://test.zaitakugeek.cn:8000/cooperation/initiated_cooperation_list?start_date=2022-01-07&end_date=2022-2-7",
+        "headers":{
+            "Content-Type":"application/json",
+            "Authorization":"Token 0f3f4f9e398819eb92f6dae3abe7958c50670338"
+        },
+        "status_code":200
+    },
+    "work_002":{
+        "url":"http://test.zaitakugeek.cn:8000/cooperation/initiated_cooperation_list?start_date=2022-01-07&end_date=2022-2-7",
+        "headers":{
+            "Content-Type":"application/json",
+            "Authorization":"Token 2dfc33e02dec5dfeaccbb309d151197bbaa0157f"
+        },
+        "status_code":200
+    }
+}

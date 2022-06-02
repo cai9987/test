@@ -1,0 +1,10 @@
+{
+    "login_001":{
+        "url":"http://test.zaitakugeek.cn:8000/user/phone_login",
+        "verify_code":"008077",
+        "phone":"15018248542",
+        "region_code":"86",
+        "status_code":200
+    }
+
+}

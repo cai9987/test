@@ -1,0 +1,30 @@
+{
+    "login_001":{
+        "url":"http://test.zaitakugeek.cn:8000/user/email_login",
+        "account":"15018248542@163.com",
+        "password":"123456",
+        "status_code":200
+    },
+    "login_002":{
+        "url":"http://test.zaitakugeek.cn:8000/user/email_login",
+        "account":"15018248542",
+        "password":"123456",
+        "status_code":200
+    },
+    "login_003":{
+        "url":"http://test.zaitakugeek.cn:8000/user/email_login",
+        "account":"15018248542",
+        "password":"12345",
+        "status_code":401
+    },"login_004":{
+        "url":"http://test.zaitakugeek.cn:8000/user/email_login",
+        "account":"1501824854",
+        "password":"123456",
+        "status_code":404
+    },"login_005":{
+        "url":"http://test.zaitakugeek.cn:8000/user/email_login",
+        "account":"15018248是xx",
+        "password":"123456",
+        "status_code":404
+    }
+}
