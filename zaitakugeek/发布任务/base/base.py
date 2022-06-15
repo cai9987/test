@@ -7,7 +7,7 @@ class Base:
     def __init__(self, driver):
         self.driver = driver
 
-    def base_find_element(self, loc, timeout=30, poll=0.5):
+    def base_find_element(self, loc, timeout=10, poll=0.5):
         return WebDriverWait(driver=self.driver,timeout=timeout,poll_frequency=poll).until(lambda x:x.find_element(*loc))
 
     def base_click(self, loc):

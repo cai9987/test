@@ -8,14 +8,16 @@ from 发布任务.read_json.read_json import ReadJson
 
 
 def get_data():
-    datas = ReadJson("login.json").read_json()
+    datas = ReadJson("task.json").read_json()
     arrs = []
     for data in datas.values():
-        arrs.append((data.get("username"),
-                     data.get("password"),
-                     data.get("result"),
-                     data.get("flag"),
-                     data.get("num")))
+        arrs.append((data.get("title"),
+                     data.get("min_money"),
+                     data.get("max_money"),
+                     data.get("want_day"),
+                     data.get("people_sum"),
+                     data.get("describe"),
+                     data.get("result")))
     return arrs
 
 
@@ -29,6 +31,7 @@ class TestLogin(unittest.TestCase):
         cls.driver = GetDriver().get_driver()
         # 实例化 获取登录对象
         cls.login = PageLogin(GetDriver().get_driver())
+        cls.login.page_task_btn()
 
     @classmethod
     def tearDownClass(cls) -> None:
@@ -36,42 +39,28 @@ class TestLogin(unittest.TestCase):
         GetDriver.quit_driver()
 
     @parameterized.expand(get_data())
-    def test_wind(self, username, password, result, flag, num):
-        self.login.page_login(username, password)
-        # if flag:
-        #     try:
-        #         # 判断 安全退出是否存在
-        #         self.assertTrue(self.login.page_if_success())
-        #         print("登录成功",num)
-        #         # 退出
-        #         self.login.page_login_success()
-        #         self.login.page_quit_login()
-        #         # self.driver.find_element_by_css_selector("#J_head_user_a").click()
-        #         #
-        #         # sleep(2)
-        #         # self.driver.find_element_by_xpath(
-        #         #     "html/body/div[1]/header/div/div[5]/div/div/div/ul[2]/li[2]/a").click()
-        #         try:
-        #             self.assertTrue(self.login.page_login_if_quit())
-        #         except AssertionError:
-        #             # 截图
-        #             self.login.page_get_image()
-        #             raise
-        #     except AssertionError:
-        #         # 截图
-        #         self.login.page_get_image()
-        #         raise
-        #     finally:
-        #         self.login.page_login_link()
+    def test_wind(self, title, min_money, max_money,want_day, people_sum, describe,result):
+        self.login.page_task(title, min_money, max_money,want_day, people_sum, describe)
+        # if self.login.page_titLe_err_text() is None:
+        #     if self.login.page_field_err_text() is None:
+        #         print("正常运行")
+        #     else:
+        #         msg = self.login.page_field_err_text()
+        #         return msg
         # else:
-        #     msg = self.login.page_err_text()
-        #     print(msg)
-        #     try:
-        #         self.assertEqual(msg,result)
-        #     except AssertionError:
-        #         self.login.page_get_image()
-        #         print("错误",num)
-        #         raise
+        #     msg = self.login.page_field_err_text()
+        #     return msg
+        # print(self.login.page_err_text())
+        msg = self.login.page_field_err_text()
+        # ms = self.login.page_err_text()
+        # print(ms)
+        print(msg)
+        try:
+            self.assertEqual(result,self.login.page_err_text())
+        except AssertionError:
+            self.login.page_get_image()
+            print("错误")
+            raise
 
 
 
