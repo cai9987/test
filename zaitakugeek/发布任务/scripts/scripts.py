@@ -99,7 +99,7 @@ class TestLogin(unittest.TestCase):
                 self.login.page_get_image()
                 raise
         else:
-            print("无错误")
+            print("任务发布成功")
         # try:
         #     self.assertEqual(result,self.login.page_field_err_text())
         # except AssertionError:

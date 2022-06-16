@@ -11,6 +11,15 @@ class PageLogin(Base):
     def page_input_task_title(self, title):
         self.base_input(page.task_title, title)
 
+    def page_task_field_click(self):
+        self.base_click(page.task_field_click)
+
+    def page_task_field_one(self):
+        self.base_click(page.task_field_one)
+
+    def page_task_field_two(self):
+        self.base_click(page.task_field_two)
+
     def page_task_date_click(self):
         self.base_click(page.task_date_click)
 
@@ -56,19 +65,18 @@ class PageLogin(Base):
     def page_describe_err_text(self):
         return self.base_get_text(page.task_describe_err_text)
 
-    # def page_err_up_text(self):
-    #     return self.base_get_text(page.login_err_up_text)
-    #
-    # def page_login_if_quit(self):
-    #     return self.base_if_success(page.login_link)
-
     def page_get_image(self):
         self.base_get_image()
 
     def page_task(self, title, min_money, max_money, want_day, people_sum, describe):
         self.page_input_task_title(title)
+        self.page_task_field_click()
+        self.page_task_field_one()
+        self.page_task_field_two()
+        sleep(2)
         self.page_task_date_click()
         self.page_task_date()
+        sleep(2)
         self.page_input_task_money_min(min_money)
         self.page_input_task_money_max(max_money)
         self.page_input_task_want_day(want_day)
