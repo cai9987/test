@@ -15,5 +15,12 @@ task_people_sum = By.XPATH, "/html/body/div[1]/div/div/div[2]/div/div/form/div[1
 task_describe = By.XPATH, "/html/body/div[1]/div/div/div[2]/div/div/form/div[3]/div[2]/div[1]/div/div/textarea"
 task_save_btn = By.XPATH, "/html/body/div[1]/div/div/div[2]/div/div/button"
 
+
+# 错误提示信息
 task_titLe_err_text = By.XPATH, "/html/body/div[1]/div/div/div[2]/div/div/form/div[1]/div[2]/div/div[1]/div/div[2]"
 task_field_err_text = By.XPATH, "/html/body/div[1]/div/div/div[2]/div/div/form/div[1]/div[2]/div/div[2]/div/div[2]"
+task_min_money_err_text = By.XPATH, "//*[@id='webApp']/div/div[2]/div/div/form/div[1]/div[2]/div/div[4]/div[1]/div/div/div[2]"
+task_max_money_err_text = By.XPATH, "/html/body/div[1]/div/div/div[2]/div/div/form/div[1]/div[2]/div/div[4]/div[2]/div/div/div[2]"
+task_want_day_err_text = By.XPATH, "/html/body/div[1]/div/div/div[2]/div/div/form/div[1]/div[2]/div/div[5]/div/div[2]"
+task_people_sum_err_text = By.XPATH, "//*[@id='webApp']/div/div[2]/div/div/form/div[1]/div[2]/div/div[6]/div/div[2]"
+task_describe_err_text = By.XPATH, "//*[@id='webApp']/div/div[2]/div/div/form/div[3]/div[2]/div[1]/div/div[2]"

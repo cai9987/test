@@ -41,24 +41,21 @@ class PageLogin(Base):
     def page_field_err_text(self):
         return self.base_get_text(page.task_field_err_text)
 
-    def page_err_text(self):
-        # title_err_text = self.page_titLe_err_text()
-        # field_err_text = self.page_field_err_text()
-        a = (self.page_titLe_err_text(), self.page_field_err_text())
-        res = list(filter(None, a))
-        return res
+    def page_min_money_err_text(self):
+        return self.base_get_text(page.task_min_money_err_text)
 
-    # def page_err_text(self):
-    #     if self.page_titLe_err_text() is None:
-    #         if self.page_field_err_text() is None:
-    #             print("正常运行")
-    #         else:
-    #             msg = self.page_field_err_text()
-    #             return msg
-    #     else:
-    #         msg = self.page_field_err_text()
-    #         return msg
-    #
+    def page_max_money_err_text(self):
+        return self.base_get_text(page.task_max_money_err_text)
+
+    def page_want_day_err_text(self):
+        return self.base_get_text(page.task_want_day_err_text)
+
+    def page_people_sum_err_text(self):
+        return self.base_get_text(page.task_people_sum_err_text)
+
+    def page_describe_err_text(self):
+        return self.base_get_text(page.task_describe_err_text)
+
     # def page_err_up_text(self):
     #     return self.base_get_text(page.login_err_up_text)
     #
@@ -77,6 +74,4 @@ class PageLogin(Base):
         self.page_input_task_want_day(want_day)
         self.page_input_task_people_sum(people_sum)
         self.page_input_task_describe(describe)
-        sleep(5)
         self.page_task_save_btn()
-        sleep(1)

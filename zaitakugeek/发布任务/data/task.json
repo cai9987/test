@@ -1,11 +1,72 @@
 {
     "login_001":{
+        "title":"",
+        "min_money":"100",
+        "max_money":"200",
+        "want_day":"10",
+        "people_sum":"2",
+        "describe":"要求能掌握90%的能力",
+        "result":"请输入需求标题",
+        "err_num":1
+    },
+    "login_002":{
         "title":"任务测试",
         "min_money":"100",
         "max_money":"200",
         "want_day":"10",
         "people_sum":"2",
         "describe":"要求能掌握90%的能力",
-        "result":null
-        }
+        "result":"请选择所属领域",
+        "err_num":2
+    },
+    "login_003":{
+        "title":"任务测试",
+        "min_money":"你好",
+        "max_money":"200",
+        "want_day":"10",
+        "people_sum":"2",
+        "describe":"要求能掌握90%的能力",
+        "result":"格式整数",
+        "err_num":3
+    },
+    "login_004":{
+        "title":"任务测试",
+        "min_money":"100",
+        "max_money":"你好",
+        "want_day":"10",
+        "people_sum":"2",
+        "describe":"要求能掌握90%的能力",
+        "result":"格式整数",
+        "err_num":4
+    },
+    "login_005":{
+        "title":"任务测试",
+        "min_money":"100",
+        "max_money":"200",
+        "want_day":"sss",
+        "people_sum":"2",
+        "describe":"要求能掌握90%的能力",
+        "result":"格式整数",
+        "err_num":5
+    },
+    "login_006":{
+        "title":"任务测试",
+        "min_money":"100",
+        "max_money":"200",
+        "want_day":"10",
+        "people_sum":"sss",
+        "describe":"要求能掌握90%的能力",
+        "result":"格式整数",
+        "err_num":6
+    },
+    "login_007":{
+        "title":"任务测试",
+        "min_money":"100",
+        "max_money":"200",
+        "want_day":"10",
+        "people_sum":"2",
+        "describe":"",
+        "result":"请输入描述",
+        "err_num":7
+    }
 }

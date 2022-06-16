@@ -20,5 +20,6 @@ if __name__ == '__main__':
                      data.get("want_day"),
                      data.get("people_sum"),
                      data.get("describe"),
-                     data.get("result")))
+                     data.get("result"),
+                     data.get("err_num")))
     print(arrs)

@@ -17,7 +17,8 @@ def get_data():
                      data.get("want_day"),
                      data.get("people_sum"),
                      data.get("describe"),
-                     data.get("result")))
+                     data.get("result"),
+                     data.get("err_num")))
     return arrs
 
 
@@ -39,28 +40,72 @@ class TestLogin(unittest.TestCase):
         GetDriver.quit_driver()
 
     @parameterized.expand(get_data())
-    def test_wind(self, title, min_money, max_money,want_day, people_sum, describe,result):
+    def test_wind(self, title, min_money, max_money,want_day, people_sum, describe,result, err_num):
         self.login.page_task(title, min_money, max_money,want_day, people_sum, describe)
-        # if self.login.page_titLe_err_text() is None:
-        #     if self.login.page_field_err_text() is None:
-        #         print("正常运行")
-        #     else:
-        #         msg = self.login.page_field_err_text()
-        #         return msg
-        # else:
-        #     msg = self.login.page_field_err_text()
-        #     return msg
-        # print(self.login.page_err_text())
-        msg = self.login.page_field_err_text()
-        # ms = self.login.page_err_text()
-        # print(ms)
-        print(msg)
-        try:
-            self.assertEqual(result,self.login.page_err_text())
-        except AssertionError:
-            self.login.page_get_image()
-            print("错误")
-            raise
+        if err_num == 1:
+            msg = self.login.page_titLe_err_text()
+            print(msg)
+            try:
+                self.assertEqual(result, self.login.page_titLe_err_text())
+            except AssertionError:
+                self.login.page_get_image()
+                raise
+        elif err_num == 2:
+            msg = self.login.page_field_err_text()
+            print(msg)
+            try:
+                self.assertEqual(result, self.login.page_field_err_text())
+            except AssertionError:
+                self.login.page_get_image()
+                raise
+        elif err_num == 3:
+            msg = self.login.page_min_money_err_text()
+            print(msg)
+            try:
+                self.assertEqual(result, self.login.page_min_money_err_text)
+            except AssertionError:
+                self.login.page_get_image()
+                raise
+        elif err_num == 4:
+            msg = self.login.page_max_money_err_text()
+            print(msg)
+            try:
+                self.assertEqual(result, self.login.page_max_money_err_text())
+            except AssertionError:
+                self.login.page_get_image()
+                raise
+        elif err_num == 5:
+            msg = self.login.page_want_day_err_text()
+            print(msg)
+            try:
+                self.assertEqual(result, self.login.page_want_day_err_text())
+            except AssertionError:
+                self.login.page_get_image()
+                raise
+        elif err_num == 6:
+            msg = self.login.page_people_sum_err_text()
+            print(msg)
+            try:
+                self.assertEqual(result, self.login.page_people_sum_err_text())
+            except AssertionError:
+                self.login.page_get_image()
+                raise
+        elif err_num == 7:
+            msg = self.login.page_describe_err_text()
+            print(msg)
+            try:
+                self.assertEqual(result, self.login.page_describe_err_text())
+            except AssertionError:
+                self.login.page_get_image()
+                raise
+        else:
+            print("无错误")
+        # try:
+        #     self.assertEqual(result,self.login.page_field_err_text())
+        # except AssertionError:
+        #     self.login.page_get_image()
+        #     print("错误")
+        #     raise
 
 
 
