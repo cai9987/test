@@ -1,0 +1,10 @@
+{
+    "sign_001":{
+        "task_want_time":"",
+        "task_want_money":"1234",
+        "task_dir":"5678",
+        "result":"请输入预计用时",
+        "flag":false,
+        "num":1
+    }
+}
