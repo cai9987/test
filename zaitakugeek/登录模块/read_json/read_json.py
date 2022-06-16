@@ -11,7 +11,7 @@ class ReadJson(object):
 
 
 if __name__ == '__main__':
-    datas = ReadJson("login.json").read_json()
+    datas = ReadJson("sign.json").read_json()
     arrs = []
     for data in datas.values():
         arrs.append((data.get("username"),

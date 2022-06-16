@@ -17,11 +17,19 @@ class PageLogin(Base):
     def page_login_btn(self):
         self.base_click(page.login_btn)
 
-    def page_err_text(self):
-        return self.base_get_text(page.login_err_text)
-
     def page_err_up_text(self):
-        return self.base_get_text(page.login_err_up_text)
+        return self.base_get_text(page.login_up_err_text)
+
+    def page_err_username_text(self):
+        return self.base_get_text(page.login_err_username_text)
+
+    def page_err_password_text(self):
+        return self.base_get_text(page.login_err_password_text)
+
+    def page_if_success(self):
+        self.base_click(page.login_if_success)
+        self.base_click(page.login_quit)
+        self.base_click(page.login_quit_btn)
 
     def page_login_if_quit(self):
         return self.base_if_success(page.login_link)
@@ -33,4 +41,4 @@ class PageLogin(Base):
         self.page_input_username(username)
         self.page_input_password(password)
         self.page_login_btn()
-        sleep(1)
+        sleep(3)
